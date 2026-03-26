@@ -4,6 +4,10 @@ use App\Models\User;
 
 return [
 
+    'features' => [
+        Laravel\Fortify\Features::registration(), 
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults

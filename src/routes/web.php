@@ -1,9 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Auth\AuthService;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
-    $auth = new AuthService();
-    return $auth->checkStatus();
+    if (Auth::check()) {
+        return "Привет, " . Auth::user()->name . "! Вы успешно вошли.";
+    }
+    return view('welcome');
+});
+
+Route::get('/home', function () {
+    return redirect('/');
 });
