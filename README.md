@@ -62,11 +62,15 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
     cd file-manager
 
     Запуск контейнеров:
+   
     docker-compose up -d --build
 
     Настройка приложения:
+   
     docker exec -it file-manager-app composer install
+   
     docker exec -it file-manager-app php artisan migrate
+   
     docker exec -it file-manager-app php artisan db:seed --class=DatabaseSeeder
 
     Доступ:
