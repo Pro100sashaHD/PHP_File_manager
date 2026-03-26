@@ -1,0 +1,15 @@
+{
+    "name": "user/file-manager",
+    "autoload": {
+        "psr-4": {
+            "User\\FileManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pro100sasha",
+            "email": "sasha_ablin@rambler.ru"
+        }
+    ],
+    "require": {}
+}
