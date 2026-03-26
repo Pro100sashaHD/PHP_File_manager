@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Modules\Auth\AuthService;
 
 Route::get('/', function () {
-    return view('welcome');
+    $auth = new AuthService();
+    return $auth->checkStatus();
 });
