@@ -11,11 +11,7 @@ Route::get('/', function () {
 
 Route::post('/logout', function (Request $request) {
     Auth::logout();
-    
-    $request->session()->invalidate();
-    $request->session()->regenerateToken();
-
-    return redirect('/login'); 
+    return redirect('/login');
 })->name('logout');
 
 Route::middleware(['auth', 'verified'])->group(function () {
