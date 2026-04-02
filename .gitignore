@@ -1,6 +1,7 @@
 /src/vendor/
 /src/.env
 /src/storage/*.key
+/src/public/storage
 /src/storage/logs/*.log
 /src/storage/framework/sessions/*
 /src/storage/framework/views/*.php
