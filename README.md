@@ -65,6 +65,8 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
 
     cp .env.example .env
 
+    chmod -R 777 storage bootstrap/cache
+
     cd ..
 
     Запуск контейнеров:
@@ -75,7 +77,7 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
    
     docker exec -it file-manager-app composer install
 
-   docker exec -it file-manager-app php artisan key:generate
+    docker exec -it file-manager-app php artisan key:generate
    
     docker exec -it file-manager-app php artisan migrate
 
