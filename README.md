@@ -57,7 +57,7 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
 5. Установка и запуск
 
     Клонирование репозитория:
-    git clone https://github.com/Pro100sashaHD/PHP_File_manager
+    git clone -b dev https://github.com/Pro100sashaHD/PHP_File_manager
    
     cd file-manager
 
@@ -68,8 +68,12 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
     Настройка приложения:
    
     docker exec -it file-manager-app composer install
+
+   docker exec -it file-manager-app php artisan key:generate
    
     docker exec -it file-manager-app php artisan migrate
+
+   если нужны готовые пользователи
    
     docker exec -it file-manager-app php artisan db:seed --class=DatabaseSeeder
 
@@ -79,4 +83,6 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
 
         Admin: admin@example.com / password
 
-        User: user@example.com / password
+        User1: user1@example.com / password
+
+        User2: user2@example.com / password
