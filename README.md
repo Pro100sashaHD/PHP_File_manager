@@ -57,7 +57,7 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
 5. Установка и запуск
 
     Клонирование репозитория:
-    git clone -b dev https://github.com/Pro100sashaHD/PHP_File_manager
+    git clone https://github.com/Pro100sashaHD/PHP_File_manager
    
     cd file-manager
 
