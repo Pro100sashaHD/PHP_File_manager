@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up()
 {
-    Schema::table('files', function (Illuminate\Database\Schema\Blueprint $table) {
+    Schema::table('files', function (Blueprint $table) {
         $table->binary('content')->nullable(); 
     });
 }
@@ -22,7 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('files', function (Blueprint $table) {
-            //
+            $table->dropColumn('content');
         });
     }
 };
