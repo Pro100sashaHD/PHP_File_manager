@@ -61,6 +61,12 @@ File Manager Engine (PHP/Laravel/PostgreSQL) Выполнил Александр
    
     cd file-manager
 
+    cd src
+
+    cp .env.example .env
+
+    cd ..
+
     Запуск контейнеров:
    
     docker-compose up -d --build
